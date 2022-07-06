@@ -3,6 +3,7 @@ import { Button, Container, Stack } from "react-bootstrap";
 import AddBudgetModal from "./components/AddBudgetModal";
 import AddExpenseModal from "./components/AddExpenseModal";
 import BudgetCard from "./components/BudgetCard";
+import UncategorisedBudgetCard from "./components/UncategorisedBudgetCard";
 import { useBudget } from "./context/BudgetsContext";
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
               />
             );
           })}
+          <UncategorisedBudgetCard />
         </div>
       </Container>
       <AddBudgetModal

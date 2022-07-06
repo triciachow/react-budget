@@ -12,7 +12,7 @@ function AddExpenseModal({ show, handleClose, defaultBudgetId }) {
     e.preventDefault();
     addExpense({
       description: descriptionRef.current.value,
-      amount: amountRef.current.value,
+      amount: parseFloat(amountRef.current.value),
       budgetId: budgetIdRef.current.value,
     });
     handleClose();
